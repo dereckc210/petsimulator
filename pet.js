@@ -7,7 +7,7 @@ function hunger () {
   console.log("You fed your pet! Hunger is now " + hunger);
 }
 
-if (_______ <= 0) {
+if (hunger <= 0) {
   console.log("Your pet is full and doesn't want to eat more!");
 }
 
