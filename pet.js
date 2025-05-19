@@ -15,7 +15,7 @@ function playPet() {
   if (energy > 0) {
     energy -= 1;
     energy += 1;
-    console.log("You played with your pet! Energy: " + energy + ",Happiness" + happiness);
+    console.log("You played with your pet! Energy: " + energy + ",Happiness: " + happiness);
   } else {
     console.log("Your pet is too tired to play.")
   }
@@ -28,5 +28,5 @@ function sleepPet() {
 
 setInterval(function() {
   hunger += 1;
-  console.log("Your pet is getting Hungrier! Hunger is now " + hunger);
+  console.log("Your pet is getting hungrier! Hunger is now " + hunger);
 }, 10000);
