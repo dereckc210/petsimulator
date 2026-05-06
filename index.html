@@ -1,44 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Ethical Hacking</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Ethical Hacking Knowledge Repo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-  <h1 class="typing">> Ethical Hacking System Initialized...</h1>
+  <h1>Ethical Hacking Knowledge Repo</h1>
+  <p>Your structured guide to cybersecurity concepts</p>
 </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="types.html">Hackers</a>
-  <a href="phases.html">Phases</a>
-  <a href="tools.html">Tools</a>
-</nav>
-
 <div class="container">
-  <div class="card">
-    <h2>What is Ethical Hacking?</h2>
-    <p>
-      Ethical hacking is the authorized testing of systems to identify 
-      vulnerabilities and improve security defenses.
-    </p>
-  </div>
 
-  <div class="card">
-    <h2>Why It Matters</h2>
-    <p>
-      Cybersecurity is critical in protecting data, systems, and privacy 
-      from malicious attacks.
-    </p>
-  </div>
+  <aside>
+    <h3>Topics</h3>
+    <ul>
+      <li><a href="#recon">Reconnaissance</a></li>
+      <li><a href="#scanning">Scanning</a></li>
+      <li><a href="#enumeration">Enumeration</a></li>
+      <li><a href="#exploitation">Exploitation</a></li>
+      <li><a href="#post">Post-Exploitation</a></li>
+      <li><a href="#tools">Tools</a></li>
+    </ul>
+  </aside>
+
+  <main>
+
+    <section id="recon">
+      <h2>🔍 Reconnaissance</h2>
+      <p>The process of gathering information about a target before attacking.</p>
+      <h4>Key Concepts</h4>
+      <ul>
+        <li>Passive Recon (OSINT, Google dorking)</li>
+        <li>Active Recon (ping, traceroute)</li>
+      </ul>
+      <h4>Notes</h4>
+      <p>Passive recon avoids detection, while active recon interacts directly with the target system.</p>
+    </section>
+
+    <section id="scanning">
+      <h2>📡 Scanning</h2>
+      <p>Identifying live systems, ports, and services.</p>
+      <h4>Key Concepts</h4>
+      <ul>
+        <li>Port scanning</li>
+        <li>Service/version detection</li>
+        <li>OS fingerprinting</li>
+      </ul>
+      <h4>Notes</h4>
+      <p>Tools like Nmap help discover vulnerabilities by mapping open ports.</p>
+    </section>
+
+    <section id="enumeration">
+      <h2>🧠 Enumeration</h2>
+      <p>Extracting detailed information from systems.</p>
+      <h4>Key Concepts</h4>
+      <ul>
+        <li>User accounts</li>
+        <li>Network shares</li>
+        <li>Services and roles</li>
+      </ul>
+      <h4>Notes</h4>
+      <p>Enumeration is more intrusive and often follows scanning.</p>
+    </section>
+
+    <section id="exploitation">
+      <h2>💣 Exploitation</h2>
+      <p>Gaining access by exploiting vulnerabilities.</p>
+      <h4>Key Concepts</h4>
+      <ul>
+        <li>Buffer overflows</li>
+        <li>Web exploits (XSS, SQLi)</li>
+      </ul>
+      <h4>Notes</h4>
+      <p>This phase uses known vulnerabilities or custom exploits.</p>
+    </section>
+
+    <section id="post">
+      <h2>🕵️ Post-Exploitation</h2>
+      <p>Maintaining access and gathering further data.</p>
+      <h4>Key Concepts</h4>
+      <ul>
+        <li>Privilege escalation</li>
+        <li>Persistence</li>
+        <li>Data exfiltration</li>
+      </ul>
+      <h4>Notes</h4>
+      <p>This stage focuses on control and long-term access.</p>
+    </section>
+
+    <section id="tools">
+      <h2>🛠 Tools</h2>
+      <ul>
+        <li>Nmap</li>
+        <li>Wireshark</li>
+        <li>Metasploit</li>
+        <li>Burp Suite</li>
+      </ul>
+    </section>
+
+  </main>
+
 </div>
 
 <footer>
-  <p>System Secure © 2026</p>
+  <p>© 2026 Ethical Hacking Notes</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
