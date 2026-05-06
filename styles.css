@@ -1,76 +1,69 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: #e2e8f0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0b0f19;
+  color: #e5e7eb;
 }
 
+/* Header */
 header {
-  background: #020617;
-  padding: 20px;
   text-align: center;
+  padding: 30px;
+  background: linear-gradient(90deg, #111827, #1f2937);
 }
 
-.container {
+/* Nav */
+nav {
   display: flex;
-}
-
-/* Sidebar */
-aside {
-  width: 220px;
+  justify-content: center;
+  gap: 20px;
   background: #020617;
-  padding: 20px;
-  height: 100vh;
-  position: sticky;
-  top: 0;
+  padding: 10px;
 }
 
-aside h3 {
-  margin-top: 0;
-}
-
-aside ul {
-  list-style: none;
-  padding: 0;
-}
-
-aside li {
-  margin: 10px 0;
-}
-
-aside a {
-  color: #38bdf8;
+nav a {
+  color: #60a5fa;
   text-decoration: none;
 }
 
-aside a:hover {
-  text-decoration: underline;
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 30px;
 }
 
-/* Main content */
-main {
-  flex: 1;
+/* Cards */
+.card {
+  background: #1f2937;
   padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
-section {
-  background: #1e293b;
+.card:hover {
+  transform: translateY(-5px);
+  background: #374151;
+}
+
+/* Notes section */
+.notes {
+  padding: 30px;
+}
+
+.note-block {
+  background: #111827;
   margin-bottom: 20px;
   padding: 20px;
-  border-radius: 8px;
+  border-left: 4px solid #3b82f6;
+  border-radius: 6px;
 }
 
-h2 {
-  margin-top: 0;
-}
-
-h4 {
-  margin-bottom: 5px;
-  color: #38bdf8;
-}
-
+/* Footer */
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   background: #020617;
 }
